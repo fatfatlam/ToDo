@@ -56,13 +56,10 @@ class ViewController: UIViewController {
             DispatchQueue.main.async{
                 self.updateTasks()
             }
-    
         }
         navigationController?.pushViewController(vc, animated: true)
         
     }
-    
-
 }
 
 extension ViewController: UITableViewDelegate{
@@ -72,8 +69,10 @@ extension ViewController: UITableViewDelegate{
         
         let vc = storyboard?.instantiateViewController(withIdentifier: "task") as! TaskViewController
         vc.title = "New Task"
-        
+        vc.task = tasks[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
+        
+        
     }
 }
 
