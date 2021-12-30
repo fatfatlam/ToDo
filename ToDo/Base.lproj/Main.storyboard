@@ -94,9 +94,26 @@
                     <view key="view" contentMode="scaleToFill" id="SGK-Ud-5rc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnt-qD-aO7">
+                                <rect key="frame" x="12" y="56" width="390" height="794"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LGg-HE-Cwj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LGg-HE-Cwj" firstAttribute="trailing" secondItem="Nnt-qD-aO7" secondAttribute="trailing" constant="12" id="LZU-yr-8zd"/>
+                            <constraint firstItem="Nnt-qD-aO7" firstAttribute="leading" secondItem="LGg-HE-Cwj" secondAttribute="leading" constant="12" id="Rux-Rq-tOb"/>
+                            <constraint firstItem="LGg-HE-Cwj" firstAttribute="bottom" secondItem="Nnt-qD-aO7" secondAttribute="bottom" constant="12" id="UTO-ut-Gcn"/>
+                            <constraint firstItem="Nnt-qD-aO7" firstAttribute="top" secondItem="LGg-HE-Cwj" secondAttribute="top" constant="12" id="jEo-l7-rci"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="Nnt-qD-aO7" id="wtK-pa-xsJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DRW-CR-LQu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
